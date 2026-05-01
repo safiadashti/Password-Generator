@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kavoon&display=swap" rel="stylesheet">
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class="box">
+        <h1>🔑 Random Password Generator</h1>
+        <input type="text" id="length" placeholder="Length" min="4" max="30">
+        <br>
+        <input type="text" id="password" readonly>
+        <br>
+         <button onclick="generate()" id="generate">Generate</button>
+         <button onclick="copyPassword()" id="copy">Copy</button>
+         <br><br>
+         <button id="colorChanger">Change Color</button>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
