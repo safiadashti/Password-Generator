@@ -11,32 +11,11 @@ document.getElementById('password').value = password;
 
 function copyPassword(){
    let password = document.getElementById('password');
-  if (pass.value === "") {
-        pass.classList.add("apply-shake");
-        
-        swal({
-            title: "Empty",
-            text:"Nothing to copy!",
-            icon: "error",
-            dangerMode: true,
-        });
-
-        setTimeout(() => {
-            pass.classList.remove("apply-shake");
-        }, 400);
-        return;
+  
    password.select();
    document.execCommand('copy');
    alert("Copied:" + password.value);
 }
-  pass.select();
-    navigator.clipboard.writeText(pass.value);
-    
-    swal({
-        title: "Password Copied",
-        text: "Copied to the clipboard",
-        icon: "success"
-    });
 function getRandomColor(){
     let letters ='0123456789ABCDEF';
     let colors = '#';
